@@ -44,7 +44,7 @@ function PropertyModal({ property, onClose }) {
         </button>
 
         {/* Image Section */}
-        <div className="grid grid-cols-2 gap-2 p-4 pt-12">
+        <div className="grid grid-cols-2 gap-2 p-3 pt-10">
           <img
             src={property.images[0]}
             alt={property.title}
@@ -77,7 +77,7 @@ function PropertyModal({ property, onClose }) {
           <div className="flex justify-between items-center pt-3 border-t">
             <span className="text-lg font-bold text-[#c89b8a]">
               ₹{property.price}
-              <span className="text-sm text-gray-500 font-normal"> / night</span>
+              <span className="text-sm text-gray-500 font-normal"></span>
             </span>
 
             <span className="text-sm font-medium text-gray-700">
