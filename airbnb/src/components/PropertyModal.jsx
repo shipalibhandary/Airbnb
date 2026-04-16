@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 function PropertyModal({ property, onClose }) {
-  // Scroll lock + ESC key support
+  
   useEffect(() => {
     if (!property) return;
 
@@ -29,28 +29,24 @@ function PropertyModal({ property, onClose }) {
       onClick={onClose}
     >
       {/* Modal Box */}
-      {/* Modal Box */}
-<div
-  className="relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto"
-  onClick={(e) => e.stopPropagation()}
->
-
-  {/* Header (safe area for close button) */}
-  <div className="sticky top-0 bg-white/90 backdrop-blur-md z-10 flex justify-end p-4 border-b">
-    <button
-      className="text-gray-600 hover:text-black text-2xl leading-none"
-      onClick={onClose}
+    <div
+      className="relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto"
+      onClick={(e) => e.stopPropagation()}
     >
-      ✕
-    </button>
-  </div>
+
+      {/* Header */}
+      <div className="sticky top-0 bg-white/90 backdrop-blur-md z-10 flex justify-end p-4 border-b">
+        <button
+          className="text-gray-600 hover:text-black text-2xl leading-none"
+          onClick={onClose}
+        >✕</button>
+      </div>
+        
         {/* Close Button */}
         <button
           className="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl"
           onClick={onClose}
-        >
-          ✕
-        </button>
+        >✕</button>
 
         {/* Image Section */}
         <div className="grid grid-cols-2 gap-2 p-4">
@@ -78,9 +74,7 @@ function PropertyModal({ property, onClose }) {
 
           <p className="text-gray-500">{property.location}</p>
 
-          <p className="text-sm text-gray-600 leading-relaxed">
-            {property.description}
-          </p>
+          <p className="text-sm text-gray-600 leading-relaxed"> {property.description} </p>
 
           {/* Price + Rating */}
           <div className="flex justify-between items-center pt-4 border-t">
@@ -89,12 +83,10 @@ function PropertyModal({ property, onClose }) {
               <span className="text-sm text-gray-500 font-normal"> / night</span>
             </span>
 
-            <span className="text-sm font-medium text-gray-700">
-              ⭐ {property.rating}
-            </span>
+            <span className="text-sm font-medium text-gray-700">⭐ {property.rating}</span>
           </div>
         </div>
-      </div>
+    </div>
     </div>
   );
 }

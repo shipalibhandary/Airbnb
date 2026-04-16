@@ -7,10 +7,10 @@ function Hero() {
           "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
       }}
     >
-      {/* 🔥 DARK OVERLAY */}
+      {/* DARK OVERLAY */}
       <div className="bg-black/40 absolute inset-0"></div>
 
-      {/* 🔥 CONTENT (must be above overlay) */}
+      {/* content) */}
       <div className="relative z-10 text-center text-white px-6">
         <h1 className="text-4xl md:text-6xl font-semibold tracking-wide">
           Luxury Stays

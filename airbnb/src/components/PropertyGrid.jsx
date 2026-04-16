@@ -11,9 +11,7 @@ function PropertyGrid({ onSelect }) {
       lg:grid-cols-4"
     >
       {properties.length === 0 ? (
-        <p className="text-center col-span-full">
-          No properties available
-        </p>
+        <p className="text-center col-span-full">No properties available</p>
       ) : (
         properties.map((property) => (
           <PropertyCard

@@ -24,14 +24,10 @@ function PropertyCard({ property, onClick }) {
           <h3 className="font-semibold text-sm">
             {property.location}
           </h3>
-          <span className="text-sm font-medium">
-            ⭐ {property.rating}
-          </span>
+          <span className="text-sm font-medium">⭐ {property.rating}</span>
         </div>
 
-        <p className="text-gray-500 text-sm truncate">
-          {property.title}
-        </p>
+        <p className="text-gray-500 text-sm truncate">{property.title}</p>
 
         <p className="mt-1 font-semibold">
           ₹{property.price}
